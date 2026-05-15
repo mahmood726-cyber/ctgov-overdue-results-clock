@@ -1,0 +1,96 @@
+{
+  "title": "CT.gov Overdue Results Clock",
+  "slug": "ctgov-overdue-results-clock",
+  "author": "Mahmood Ahmad",
+  "date": "2026-03-29",
+  "body": "What does reporting debt look like once missing results are converted into time since due rather than a single binary flag? We analysed 249,507 eligible older closed interventional studies from the March 29, 2026 full-registry snapshot. We summarized current result-posting status, shares reported within 12, 24, 36, and 60 months, reporting-lag distributions for reported studies, and overdue years beyond the two-year mark for unresolved studies. Pre-FDAAA cohorts remain the deepest debt pool: 87.7 percent unresolved, median reported lag 2,247 days, and mean unresolved debt 18.6 years beyond the two-year mark. By sponsor class, OTHER_GOV is worst on unresolved older studies at 95.7 percent, while industry still combines a 58.1 percent unresolved rate with 9.35 mean overdue years beyond the two-year mark. The clock therefore separates ancient unresolved stock from newer cohorts that are still drifting into silence. These timing summaries use current registry status and do not infer when unpublished external papers may have appeared yet.",
+  "word_count": 156,
+  "sentence_count": 7,
+  "sentences": [
+    {
+      "role": "Question",
+      "text": "What does reporting debt look like once missing results are converted into time since due rather than a single binary flag?"
+    },
+    {
+      "role": "Dataset",
+      "text": "We analysed 249,507 eligible older closed interventional studies from the March 29, 2026 full-registry snapshot."
+    },
+    {
+      "role": "Method",
+      "text": "We summarized current result-posting status, shares reported within 12, 24, 36, and 60 months, reporting-lag distributions for reported studies, and overdue years beyond the two-year mark for unresolved studies."
+    },
+    {
+      "role": "Primary result",
+      "text": "Pre-FDAAA cohorts remain the deepest debt pool: 87.7 percent unresolved, median reported lag 2,247 days, and mean unresolved debt 18.6 years beyond the two-year mark."
+    },
+    {
+      "role": "Secondary result",
+      "text": "By sponsor class, OTHER_GOV is worst on unresolved older studies at 95.7 percent, while industry still combines a 58.1 percent unresolved rate with 9.35 mean overdue years beyond the two-year mark."
+    },
+    {
+      "role": "Interpretation",
+      "text": "The clock therefore separates ancient unresolved stock from newer cohorts that are still drifting into silence."
+    },
+    {
+      "role": "Boundary",
+      "text": "These timing summaries use current registry status and do not infer when unpublished external papers may have appeared yet."
+    }
+  ],
+  "notes": {
+    "app": "CT.gov Overdue Results Clock dashboard",
+    "data": "249,507 eligible older closed interventional studies with current reporting status and results-posting lag fields",
+    "code": "https://github.com/mahmood726-cyber/ctgov-overdue-results-clock",
+    "doi": "",
+    "version": "1.0.0",
+    "date": "2026-03-29",
+    "validation": "FULL REGISTRY RUN"
+  },
+  "type": "methods",
+  "primary_estimand": "Unresolved share and overdue years beyond the two-year mark among eligible older CT.gov studies",
+  "validation": {
+    "status": "fail",
+    "checks": [
+      {
+        "name": "single paragraph",
+        "ok": true,
+        "detail": "Body must not contain blank-line paragraph breaks."
+      },
+      {
+        "name": "sentence count",
+        "ok": true,
+        "detail": "Found 7 sentences."
+      },
+      {
+        "name": "word count",
+        "ok": true,
+        "detail": "Found 156 words."
+      },
+      {
+        "name": "no headings",
+        "ok": true,
+        "detail": "No markdown headings allowed in body."
+      },
+      {
+        "name": "no links",
+        "ok": true,
+        "detail": "No links or DOI links allowed in body."
+      },
+      {
+        "name": "result sentence has interval",
+        "ok": true,
+        "detail": "Sentence 4 should include a quantitative result such as a percentage, count, or interval."
+      },
+      {
+        "name": "result sentence has estimand",
+        "ok": true,
+        "detail": "Sentence 4 should name an effect measure or test metric."
+      },
+      {
+        "name": "boundary sentence present",
+        "ok": false,
+        "detail": "Sentence 7 should express a limitation, harm, or scope boundary."
+      }
+    ]
+  },
+  "schema": "e156-v0.2"
+}
