@@ -461,8 +461,8 @@ if(htmlAssets.length > 0){
 const notes = D.notes || {};
 const noteFields = [
   ["Type", D.type], ["Primary Estimand", D.primary_estimand],
-  ["App", notes.app], ["Data", notes.data], ["Code", notes.code],
-  ["DOI", notes.doi], ["Version", notes.version || D.version],
+  ["App", notes.app || D.app], ["Data", notes.data || D.data], ["Code", notes.code || D.code],
+  ["DOI", notes.doi || D.doi], ["Version", notes.version || D.version],
   ["Certainty", notes.certainty || D.certainty],
   ["Validation", notes.validation || (D.validation||{}).status]
 ];
