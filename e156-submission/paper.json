@@ -43,7 +43,8 @@
     "doi": "",
     "version": "1.0.0",
     "date": "2026-03-29",
-    "validation": "FULL REGISTRY RUN"
+    "validation": "Historical aggregate not independently reproduced (frozen source and aggregation unavailable)",
+    "reproducibility": "Historical figures unverified; 2-year marker is descriptive, not statutory overdue"
   },
   "type": "methods",
   "primary_estimand": "Unresolved share and overdue years beyond the two-year mark among eligible older CT.gov studies",
