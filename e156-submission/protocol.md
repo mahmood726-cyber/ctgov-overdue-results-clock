@@ -4,6 +4,8 @@ author@example.com
 
 Protocol: CT.gov Overdue Results Clock
 
+**Scientific validity notice (15 October 2026):** The reported 29 March 2026 249,507-study aggregates have **not been independently reproduced**. This repository lacks the exact dated input snapshot and original aggregation code. The two-year no-posting marker is descriptive, **not a statutory ACT/FDAAA results-reporting deadline**; results posting is not results submission, and absence of posted results is not proof of legal noncompliance or absence of an external publication. The separate `src/registry_clock.py` per-NCT descriptive research utility does not recalculate these historical figures.
+
 This protocol converts missing-results status into a reporting clock for eligible older closed interventional ClinicalTrials.gov studies. Primary outputs compare current unresolved shares, shares reported within 12, 24, 36, and 60 months, lag distributions for reported studies, and overdue years beyond the two-year mark for unresolved studies. The aim is to separate very old unresolved debt from newer cohorts that are only beginning to drift into silence. Because timing is based on registry dates and current status, these outputs describe registry-visible age of debt rather than external-publication timing.
 
 Outside Notes
@@ -13,7 +15,7 @@ Primary estimand: Unresolved share and overdue years beyond the two-year mark am
 App: CT.gov Overdue Results Clock dashboard
 Code: https://github.com/mahmood726-cyber/ctgov-overdue-results-clock
 Date: 2026-03-29
-Validation: FULL REGISTRY RUN
+Validation: historical analysis NOT independently reproduced; source and aggregation missing
 
 References
 

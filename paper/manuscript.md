@@ -21,3 +21,8 @@ What does reporting debt look like once missing results are converted into time 
 1. Expand the background and rationale into a full introduction.
 2. Translate the E156 capsule into detailed methods, results, and discussion sections.
 3. Add figures, tables, and a submission-ready reference narrative around the existing evidence object.
+
+
+## Scientific validity notice (15 October 2026)
+
+The historical March 29, 2026 249,507-study numbers reported above are **not independently reproduced here**. The cohort-level source snapshot and original aggregation program are not included. A two-year registry-posting marker is a descriptive choice, not a legal due date. Absence of posted registry results is neither proof of ACT/FDAAA noncompliance nor of no published paper. Regulatory applicability and waivers/certifications/delays require trial-specific review. Results posting differs from results submission. Posted-only lag distributions condition on observed results and are not censoring-corrected cross-cohort comparisons. The new src/registry_clock.py is a separate, auditable per-NCT review utility and does not recalculate these historical figures.
