@@ -1,0 +1,15 @@
+name: Descriptive clock validity tests
+on:
+  push:
+  pull_request:
+jobs:
+  scientific-guards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pytest
+      - run: python -m compileall -q src
+      - run: python -m pytest -q tests
