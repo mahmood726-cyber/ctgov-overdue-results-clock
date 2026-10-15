@@ -14,7 +14,7 @@ App: CT.gov Overdue Results Clock dashboard
 Data: 249,507 eligible older closed interventional studies with current reporting status and results-posting lag fields
 Code: https://github.com/mahmood726-cyber/ctgov-overdue-results-clock
 Version: 1.0.0
-Validation: FULL REGISTRY RUN
+Validation: historical analysis NOT independently reproduced; source and aggregation missing
 
 References
 
