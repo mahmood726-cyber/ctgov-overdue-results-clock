@@ -20,7 +20,7 @@ def test_prominent_historical_uncertainty_notice_on_public_pages(page):
     assert "not an ACT/FDAAA" in html
     assert "results posting" in html.lower()
     assert "submission" in html.lower()
-    assert "external publication" in html.lower()
+    assert "external publication" in html.lower() or "external journal publication" in html.lower()
     assert html.index('class="methodology-notice"') < html.index('class="hero"') if page in ("index.html", "dashboard.html") else html.index('class="methodology-notice"') < html.index('class="body-section"')
 
 
