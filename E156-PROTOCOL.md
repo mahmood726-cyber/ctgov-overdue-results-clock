@@ -2,6 +2,8 @@
 
 This repository is the source code and dashboard backing an E156 micro-paper on the [E156 Student Board](https://mahmood726-cyber.github.io/e156/students.html).
 
+**Scientific validity notice (15 October 2026):** The reported 29 March 2026 249,507-study aggregates have **not been independently reproduced**. This repository lacks the exact dated input snapshot and the original aggregation code. The two-year no-posting marker is descriptive, **not a statutory ACT/FDAAA results-reporting deadline**; the registry's public results-posting date is not a submission date, and absence of posted results is not proof of legal noncompliance or absence of an external publication. See `src/registry_clock.py` for a separate, auditable per-NCT descriptive utility that does not reproduce the historical aggregate.
+
 ---
 
 ## `[222]` CT.gov Overdue Results Clock
@@ -30,8 +32,8 @@ References (topic pack: CT.gov / ClinicalTrials.gov audit):
   2. Anderson ML, Chiswell K, Peterson ED, Tasneem A, Topping J, Califf RM. 2015. Compliance with results reporting at ClinicalTrials.gov. N Engl J Med. 372(11):1031-1039. doi:10.1056/NEJMsa1409364
 
 Data availability: No patient-level data used. Analysis derived exclusively
-  from publicly available aggregate records. All source identifiers are in
-  the protocol document linked above.
+  from publicly available aggregate records. The exact dated source snapshot and original cohort aggregation program
+  are not available in this repository; the reported historical aggregates are not reproduced.
 
 Ethics: Not required. Study uses only publicly available aggregate data; no
   human participants; no patient-identifiable information; no individual-
