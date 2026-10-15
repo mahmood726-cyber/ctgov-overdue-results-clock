@@ -13,7 +13,7 @@ Primary estimand: Unresolved share and overdue years beyond the two-year mark am
 App: CT.gov Overdue Results Clock dashboard
 Code: https://github.com/mahmood726-cyber/ctgov-overdue-results-clock
 Date: 2026-03-29
-Validation: FULL REGISTRY RUN
+Validation: historical analysis NOT independently reproduced; source and aggregation missing
 
 References
 
