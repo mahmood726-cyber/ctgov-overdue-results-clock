@@ -157,6 +157,9 @@ def main():
         parser.error("Source and destination paths must be different")
     args.output.parent.mkdir(parents=True, exist_ok=True)
     seen, states, older_states = set(), Counter(), Counter()
+    # The output must attest to the bytes actually classified, not a later
+    # revision of a source file changed during this potentially long run.
+    source_sha256_before = digest(args.input)
     try:
         with temporary.open("w", encoding="utf-8") as handle:
             for trial in study_rows(args.input):
@@ -170,12 +173,14 @@ def main():
                 handle.write(json.dumps(row, sort_keys=True) + "\n")
         if not seen:
             raise ValueError("Refusing to publish an empty source dataset")
+        if digest(args.input) != source_sha256_before:
+            raise ValueError("Source input changed during classification; refusing mismatched provenance")
         temporary.replace(args.output)
     finally:
         temporary.unlink(missing_ok=True)
     provenance = {
         "source_snapshot_date_user_asserted": when.isoformat(),
-        "source_input_sha256": digest(args.input),
+        "source_input_sha256": source_sha256_before,
         "derived_output_sha256": digest(args.output),
         "record_count": len(seen),
         "states_all": dict(sorted(states.items())),
